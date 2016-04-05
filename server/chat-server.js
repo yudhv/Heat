@@ -6,6 +6,7 @@ io.on('connection', function(socket){
     socket.on('join:room', function(data){
         var room_name = data.room_name;
         socket.join(room_name);
+        console.log('hello');
     });
 
 
